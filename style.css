@@ -1,0 +1,32 @@
+body{
+    background-image: url(./pizza.jpeg) ;
+    background-size: 1630px;
+    text-align: center;
+}
+
+h1{
+    color: brown;
+    font-weight: bolder;
+    font-size: 35px;
+    
+}
+h2{
+    font-size: 23px;
+}
+h1,h2{    
+font-family: 'Headland One', serif;
+}
+.logo img{
+    float: right;
+    border-radius: 80%;
+    height: 90px;
+    
+    background-position: top;
+    opacity: 0.92;
+    border-style: solid;
+    border-color: black;
+
+}
+.submit_button{
+    background-color: paleturquoise;
+}

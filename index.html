@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="MANRIDH'S WEBPAGE" content="HTML ASSIGNMENT">
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Headland+One&family=Unbounded:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <img src="./logo.jpg" alt="Logo of my page">        <!--logo of the HTML page-->
+    </div>
+
+	<h1>Pizza Order Form</h1>                                <!--Heading 1-->
+   
+	<form action="http://ManridhFormpage/pizzaorder" method="POST">
+
+		<h2>Customer Information</h2>                                      <!-- heading 2-->
+		<label for="orderId">Order ID:</label>
+		<input type="text" name="orderId" id="orderId" placeholder="4 digits"><br><br>      <!--user will input its id-->
+
+		<label for="name">Name:</label>                                                
+		<input type="text" name="name" id="name"><br><br>                               <!-- user will input its name-->
+
+		<label for="address">Address:</label>                                       
+		<input type="text" name="address" id="address"><br><br>            <!--user  will input its address-->
+
+		<label for="email">Email:</label>                                          
+		<input type="text" name="email" placeholder="_@.ca" id="email"><br><br>      <!-- user will enter its email-->
+
+		<label for="phone">Phone:</label>
+		<input type="text" name="phone" id="phone" placeholder="999-9999999"><br><br>   <!--user will input it's phone number-->
+
+		<h2>Pizza Toppings:</h2>                                                 <!---heading 3-->
+		<label for="size">Which size would you like to order?</label><br>
+		<select name="size" id="size">                                       <!--user will select the size of pizza -->
+            <option value="small">Small - $10.00</option>                   <!-- small size  pizza-->
+            <option value="medium">Medium - $12.00</option>                 <!--medium size pizza-->
+            <option value="large">Large - $14.00</option>                    <!--large size piza-->
+          </select><br><br>
+          
+		<label for="toppings">Which toppings you want to add?</label><br>       <!--user will select the toppings they would like to have-->
+		<input type="checkbox" name="toppings[]" id="toppings"  value="green pepper">Green Pepper    <!--green pepper topping-->
+		<input type="checkbox" name="toppings[]"  value="onion">Onion                 <!--onion toppings-->
+		<input type="checkbox" name="toppings[]"  value="olive">Olive                    <!--olive toppings-->
+		<input type="checkbox" name="toppings[]" value="tomato">Tomatoes                 <!--tomato toppings-->
+
+		<h2>Delivery:</h2>                                                     <!--heading 4-->
+		<p>Select the delivery mode:</p>
+		<input type="radio" name="delivery" value="instore">In-Store Pickup            <!--option 1-->
+		<input type="radio" name="delivery" value="ubereats">Uber Eats            <!--option 2-->
+		<span id="deliveryError"></span><br><br>
+		
+			
+	   <a href="#" class="submit_button">Place Order</a>      <!-- by clicking the button order will be placed-->
+
+			
+		
+		
+
+		   
+	</form>
+   
+</body>
+</html>
